@@ -28,6 +28,11 @@ Create a Global roles named project and give it permisson of project_show.
 
 ![Screenshot from 2024-11-29 12-59-09](https://github.com/user-attachments/assets/6152969f-8770-4f79-a794-bd1cb1c3b675)
 
+Add user project in item roles, give it the permission of project_view.
+
+![Screenshot from 2024-11-29 13-02-14](https://github.com/user-attachments/assets/304d455c-38a2-4dac-8eb4-e6941113a26f)
+
+
 
 
 
