@@ -52,6 +52,28 @@ The Jenkins pipeline performs automation in three stages: Git Checkout (cloning 
 
 This Bash script monitors system resources by identifying processes consuming the most CPU and memory. It uses ps aux to sort and display the top resource-intensive processes. Additionally, it detects zombie processes (in the "Z" state) with the help of awk, aiding in efficient process management and troubleshooting.
 
+![Screenshot from 2024-11-29 16-36-16](https://github.com/user-attachments/assets/c8886229-390e-433a-b643-5e949c6aa08d)
+
+This Bash script monitors the root directory's disk usage percentage. If usage exceeds 80%, it displays a warning message and exits with an error code. Otherwise, it confirms that disk usage is within safe limits. This proactive method helps administrators manage potential disk space issues effectively.
+
+![Screenshot from 2024-11-29 16-38-12](https://github.com/user-attachments/assets/cd334c68-8138-4b63-b384-6f6eb6b63a78)
+
+This Bash script automates backups with optional compression. It accepts source and destination directories, validates their existence, and creates the destination if necessary. Backups are uniquely timestamped, compressed when the -c flag is used, or simply copied. Operations are logged for tracking, and backups older than 7 days are removed to conserve space, ensuring efficient and dependable data protection.
+
+![Screenshot from 2024-11-29 16-40-21](https://github.com/user-attachments/assets/31254d11-02aa-46ab-80b3-f2f5403d1a63)
+
+# Build Java app and trigger pipeline
+
+
+
+
+
+
+
+
+
+
+
 
 
 
