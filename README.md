@@ -24,13 +24,22 @@ Create a item role named project_show with pattern of "project.*" and from the j
 
 ![Screenshot from 2024-11-29 12-54-00](https://github.com/user-attachments/assets/fecfee65-5378-4cc1-966d-5a031d026acd)
 
-Create a Global roles named project and give it permisson of project_show.
+Create a Global roles named project and give it permisson of project_view.
 
 ![Screenshot from 2024-11-29 12-59-09](https://github.com/user-attachments/assets/6152969f-8770-4f79-a794-bd1cb1c3b675)
 
 Add user project in item roles, give it the permission of project_view.
 
 ![Screenshot from 2024-11-29 13-02-14](https://github.com/user-attachments/assets/304d455c-38a2-4dac-8eb4-e6941113a26f)
+
+Login from the project user
+
+![Screenshot from 2024-11-29 13-05-39](https://github.com/user-attachments/assets/57cf67a2-fbc1-4c58-8dc3-0df1680de33d)
+
+Now we will observe the project with same patterns
+
+![Screenshot from 2024-11-29 13-08-55](https://github.com/user-attachments/assets/fad86eb4-d34d-4364-b3be-b04e5d72e5b9)
+
 
 
 
