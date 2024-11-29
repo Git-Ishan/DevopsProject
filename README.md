@@ -42,7 +42,16 @@ Now we will observe the project with same patterns
 
 # Create a pipeline to execute a shell script, on git, on scripting task, Monitor disk utlization and send mail if > 80%, Process Management, take inputs, check for errors, cleanup, backup, logging.
 
+The scripts required to execute the pipeline, including JenkinsFile, bullet.sh, script1.sh, and script2.sh, are available on GitHub.
+
 ![Screenshot from 2024-11-29 13-24-48](https://github.com/user-attachments/assets/3a86ea88-76df-4731-8d45-82c2eb966436)
+
+The Jenkins pipeline performs automation in three stages: Git Checkout (cloning the repository), Disk Usage Check (executing script1.sh), and Process Management (executing bullet.sh). It is configured to run hourly and sends failure notifications via email, providing job details and a link to the console output for troubleshooting.
+
+![Screenshot from 2024-11-29 16-33-41](https://github.com/user-attachments/assets/55346e9d-aac6-4041-a878-b329e76fc7c5)
+
+This Bash script monitors system resources by identifying processes consuming the most CPU and memory. It uses ps aux to sort and display the top resource-intensive processes. Additionally, it detects zombie processes (in the "Z" state) with the help of awk, aiding in efficient process management and troubleshooting.
+
 
 
 
