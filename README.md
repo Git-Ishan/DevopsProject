@@ -1,5 +1,7 @@
 # Script to install Jenkins
 
+This script simplifies the installation of Java 17 and Jenkins on Debian-based Linux or macOS systems. It detects the operating system (Debian or macOS) and uses the appropriate package manager (`apt` for Debian, `brew` for macOS) to install the required packages. The script handles prerequisites, adds the Jenkins repository (for Debian), and completes the software installation. By automating these repetitive setup steps, it streamlines the process of configuring an environment for Jenkins.
+
 ![Screenshot from 2024-11-29 12-15-15](https://github.com/user-attachments/assets/c0016c10-78a2-4840-ad10-6513d6d2d659)
 
 This Bash script automates the installation of Java 17 and Jenkins on Ubuntu, Red Hat, or macOS platforms. The `identify_platform` function detects the OS type using `OSTYPE` and available package managers (`apt`, `yum`, or `brew`). Based on the detected platform, `setup_java` installs OpenJDK 17, and `setup_jenkins` installs Jenkins using the appropriate package manager and keys. Both functions handle platform-specific commands to ensure compatibility. The script exits if an unsupported platform is detected. The `execute_tasks` function orchestrates the process, running platform detection first and then sequentially setting up Java and Jenkins. Finally, it provides guidance to access Jenkins via a browser.
@@ -63,6 +65,32 @@ This Bash script automates backups with optional compression. It accepts source 
 ![Screenshot from 2024-11-29 16-40-21](https://github.com/user-attachments/assets/31254d11-02aa-46ab-80b3-f2f5403d1a63)
 
 # Build Java app and trigger pipeline
+
+This ensures the installation of Java 17 with the specified version.
+
+![Screenshot from 2024-11-29 16-44-08](https://github.com/user-attachments/assets/1402e943-7dce-47c2-9a7f-69bcacb914bd)\
+
+This ensures the installation of Maven 3.9.9
+
+![Screenshot from 2024-11-29 16-45-12](https://github.com/user-attachments/assets/7aa54f3f-a5c1-4ad2-b0eb-f1285bb91d77)
+
+This Jenkins pipeline automates the build, test, and deploy workflow for a Java project. It pulls code from a Git repository, builds it with Maven (skipping tests during packaging), and runs tests with results published using JUnit. The "Deliver" stage executes a deployment script (`deliver.sh`). The pipeline supports branch selection via parameters and triggers builds on GitHub pushes. Configured to use Maven 3.9.9 and Java 17, it enforces a 10-minute timeout for execution. Post-build steps include archiving artifacts, cleaning the workspace, and logging the pipeline status (success or failure). This setup ensures streamlined, automated, and reliable builds with integrated testing and deployment.
+
+![Screenshot from 2024-11-29 16-49-22](https://github.com/user-attachments/assets/6fa8b976-3da0-4f10-94f1-8a140cb11292)
+
+The Jenkins pipeline now includes the GitHub repository and allows branch selection via a parameter.
+
+![Screenshot from 2024-11-29 16-53-28](https://github.com/user-attachments/assets/45806a7b-6417-4cce-9df4-ffd35ba85bd9)
+
+In the pipeline section, set the definition to Pipeline script from SCM, specifying the Git repository and using */main as the branch specifier.
+
+![Screenshot from 2024-11-29 16-55-13](https://github.com/user-attachments/assets/8b309135-58a5-4ad1-b272-1c461b977f06)
+
+The script path is specified as example-app-pipeline/Jenkinsfile, where the pipeline script is executed from.
+
+![Screenshot from 2024-11-29 16-56-30](https://github.com/user-attachments/assets/709d05ba-b62d-41e9-b444-052dc86dc680)
+
+
 
 
 
