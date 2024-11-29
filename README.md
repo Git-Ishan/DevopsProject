@@ -24,4 +24,11 @@ Create a item role named project_show with pattern of "project.*" and from the j
 
 ![Screenshot from 2024-11-29 12-54-00](https://github.com/user-attachments/assets/fecfee65-5378-4cc1-966d-5a031d026acd)
 
+Create a Global roles named project and give it permisson of project_show.
+
+![Screenshot from 2024-11-29 12-59-09](https://github.com/user-attachments/assets/6152969f-8770-4f79-a794-bd1cb1c3b675)
+
+
+
+
 
