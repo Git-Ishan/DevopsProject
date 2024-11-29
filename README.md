@@ -40,6 +40,11 @@ Now we will observe the project with same patterns
 
 ![Screenshot from 2024-11-29 13-08-55](https://github.com/user-attachments/assets/fad86eb4-d34d-4364-b3be-b04e5d72e5b9)
 
+# Create a pipeline to execute a shell script, on git, on scripting task, Monitor disk utlization and send mail if > 80%, Process Management, take inputs, check for errors, cleanup, backup, logging.
+
+![390887888-541aecb8-ba6c-4f2c-9758-d80e6551a889](https://github.com/user-attachments/assets/258405c6-bacc-4070-9229-29431c5cdbf9)
+
+
 
 
 
